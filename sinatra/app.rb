@@ -24,7 +24,7 @@ require 'sinatra'
   end
 
   get '/named-cat' do
-    p params[:name]
-    @cat_name = params[:name]
+    p params
+    @name = params[:name]
     erb(:index)
   end
